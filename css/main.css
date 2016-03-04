@@ -1,0 +1,162 @@
+/* General */
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2,
+legend {
+	color: #444;
+	font-size: 1.75em;
+}
+
+p,
+label {
+	color: #bbb;
+	font-size: 1.3em;
+}
+
+.container {
+	width: 92.5%;
+	margin: auto;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/* Hr Line */
+.line1 {
+	background-color: #000;
+	height: 4px;
+	border: none;
+	margin-bottom: -4px;
+}
+
+.line2 {
+	background-color: #000;
+	height: 2px;
+	border: none;
+}
+
+
+/* Header */
+.main-header {
+	text-align: center;
+}
+
+.atitle:link,
+.atitle:visited,
+.atitle:active {
+	color: #fff;
+}
+
+.title {
+	background-color: #011f4b;
+	margin: auto;
+	text-align: center;
+	padding: 25px;
+}
+
+
+/* Body: Form; */
+legend {
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+
+fieldset {
+	border-style: none;
+	margin: 25px 0;
+}
+
+.contactinformation > input,
+textarea,
+select {
+	border-radius: 5px;
+	background-color: #eee;
+	width: 100%;
+	height: 50px;
+	border: none;
+	padding: 10px;
+	margin: 15px 0;
+}
+
+.contactinformation > input:focus,
+textarea:focus,
+select:focus, 
+#misc:focus {
+	outline: none;
+	border: 2px solid blue;
+}
+
+
+.newsletter > input {
+	margin: 15px 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	margin-right: 10px;
+}
+
+textarea {
+	resize: none;
+	height: 100px;
+}
+
+#misc {
+	height: 125px;
+}
+#zipcode {
+	width: 50%;
+}
+
+button {
+	width: 100%;
+	height: 75px;
+	background-color: #0b9add;
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+
+/* Footer */
+.main-footer {
+	font-style: italic;
+	text-align: center;
+}
+
+
+/* Media Queries */
+@media (min-width: 768px) {
+	.contactinformation > input,
+	.contactinformation textarea,
+	select {
+		width: 75%;
+		float: right;
+	}
+
+	#zipcode {
+		width: 25%;
+	}
+
+	.contactinformation textarea {
+		height: 50px;
+	}
+
+	.contactinformation > label {
+		padding-top: 30px;
+		float: left;
+		clear: both;
+	}
+}
